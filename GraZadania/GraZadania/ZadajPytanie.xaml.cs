@@ -70,7 +70,7 @@ namespace GraZadania
                     if (ListaPytan[inc - 1].Wynik == Int32.Parse(dzialanieBox.Text))
                     {
                         List[List.Count - 1].Punkty = List[List.Count - 1].Punkty + 1;
-                        ;
+                        
                     }
                     this.dzialanieBlock.Text = ListaPytan[inc].Dzialanie;
                     this.dzialanieBox.Text = "";
@@ -80,7 +80,7 @@ namespace GraZadania
                 {
                     if (ListaPytan[inc - 1].Wynik == Int32.Parse(dzialanieBox.Text))
                     {
-                        List[0].Punkty = List[0].Punkty + 1;
+                        List[List.Count - 1].Punkty = List[List.Count - 1].Punkty + 1;
 
                     }
                     this.NavigationService.Navigate(new WyswietlRanking(List));
