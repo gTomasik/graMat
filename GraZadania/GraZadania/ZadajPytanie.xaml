@@ -9,7 +9,7 @@
       Title="ZadajPytanie">
 
     <Grid>
-        <TextBox Name="dzialanieBox" HorizontalAlignment="Left" Height="42" Margin="159,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" />
+        <TextBox Name="dzialanieBox" HorizontalAlignment="Left" Height="42" Margin="159,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="0" />
         <Label Content="Wynik:" HorizontalAlignment="Left" Height="42" Margin="108,106,0,0" VerticalAlignment="Top" Width="46"/>
         <Button Content="Dalej" Click="Button_Click" HorizontalAlignment="Left" Height="39" Margin="187,157,0,0" VerticalAlignment="Top" Width="169"/>
         <Button Name="button2" Content="Zaladuj Pytania" Click="Button_Click_1" HorizontalAlignment="Left" Height="37" Margin="19,217,0,0" VerticalAlignment="Top" Width="149"/>

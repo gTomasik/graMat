@@ -18,3 +18,5 @@ c:\users\ja\documents\visual studio 2017\Projects\GraZadania\GraZadania\obj\Debu
 c:\users\ja\documents\visual studio 2017\Projects\GraZadania\GraZadania\obj\Debug\GraZadania.csproj.GenerateResource.Cache
 c:\users\ja\documents\visual studio 2017\Projects\GraZadania\GraZadania\obj\Debug\GraZadania.exe
 c:\users\ja\documents\visual studio 2017\Projects\GraZadania\GraZadania\obj\Debug\GraZadania.pdb
+c:\users\ja\documents\visual studio 2017\Projects\GraZadania\GraZadania\bin\Debug\Ninject.dll
+c:\users\ja\documents\visual studio 2017\Projects\GraZadania\GraZadania\bin\Debug\Ninject.xml

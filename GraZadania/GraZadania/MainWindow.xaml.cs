@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
 
 namespace GraZadania
 {
@@ -25,17 +26,19 @@ namespace GraZadania
             InitializeComponent();
         }
 
+ 
+        List<Gracz> ListaGraczy = new List<Gracz>();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //MainFrame.Content = new DodajGracza();
-            MainFrame.NavigationService.Navigate(new DodajGracza());
+            MainFrame.NavigationService.Navigate(new DodajGracza(ListaGraczy));
             //MainFrame.Controls.Remove(button1);
             this.button1.Content = "";
             this.button1.Height = 0;
             this.button1.Width = 0;
 
-
-
         }
+
+
     }
 }

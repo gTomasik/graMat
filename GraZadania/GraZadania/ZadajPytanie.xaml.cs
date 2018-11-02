@@ -25,19 +25,27 @@ namespace GraZadania
             InitializeComponent();
 
         }
+        private List<Gracz> List;
+        
+        public ZadajPytanie(List<Gracz> lista)
+        {
+            InitializeComponent();
+            List = lista;
+
+        }
         struct Pytanie
         {
             public string Dzialanie;
             public int Wynik;
         }
   
-        public int inc = 1;
+        
         List<Pytanie> ListaPytan = new List<Pytanie>()
         {
-            new Pytanie(){Dzialanie="1+1+2", Wynik =3},
+            new Pytanie(){Dzialanie="1+1+2", Wynik =4},
             new Pytanie(){Dzialanie="1+5", Wynik =6},
             new Pytanie(){Dzialanie="5-2", Wynik =3},
-            new Pytanie(){Dzialanie="4/2", Wynik =3},
+            new Pytanie(){Dzialanie="4/2", Wynik =2},
             new Pytanie(){Dzialanie="4*1", Wynik =4},
 
         };
@@ -50,26 +58,44 @@ namespace GraZadania
             this.button2.Content = "";
             this.button2.Height = 0;
             this.button2.Width = 0;
+            this.dzialanieBox.Width = 225;
         }
-
+        public int inc=1;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-            
-            if(inc<ListaPytan.Count)
+            try
             {
-                if(ListaPytan[inc].Wynik == Int32.Parse(this.dzialanieBox.Text))
+                if (inc < ListaPytan.Count)
                 {
-
+                    if (ListaPytan[inc - 1].Wynik == Int32.Parse(dzialanieBox.Text))
+                    {
+                        List[List.Count - 1].Punkty = List[List.Count - 1].Punkty + 1;
+                        ;
+                    }
+                    this.dzialanieBlock.Text = ListaPytan[inc].Dzialanie;
+                    this.dzialanieBox.Text = "";
+                    inc = inc + 1;
                 }
-                this.dzialanieBlock.Text = ListaPytan[inc].Dzialanie;
-                this.dzialanieBox.Text = "";
-                inc = inc + 1;
+                else
+                {
+                    if (ListaPytan[inc - 1].Wynik == Int32.Parse(dzialanieBox.Text))
+                    {
+                        List[0].Punkty = List[0].Punkty + 1;
+
+                    }
+                    this.NavigationService.Navigate(new WyswietlRanking(List));
+                }
             }
-            else
+
+            catch
             {
-                this.NavigationService.Navigate(new WyswietlRanking());
+                System.Windows.MessageBoxResult result = MessageBox.Show("Podaj odpowiedź która jest liczbą",
+                                                "Error",
+                                                MessageBoxButton.OK,
+                                                MessageBoxImage.Error);
             }
+
+         
            
         }
        

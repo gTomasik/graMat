@@ -9,8 +9,14 @@
       Title="WyswietlRanking">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Height="217" Margin="64,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="386"/>
-        <Button Name="ZagrajPonownie" Click="Button_Click" Content="Zagraj Ponownie" HorizontalAlignment="Left" Height="37" Margin="138,272,0,0" VerticalAlignment="Top" Width="196"/>
+        <Button Name="ZagrajPonownie" Click="Button_Click" Content="Zagraj Ponownie" HorizontalAlignment="Left" Height="37" Margin="259,268,0,0" VerticalAlignment="Top" Width="223"/>
+        <Button Content="Wyświetl Ranking" Click="Button_Click_1" HorizontalAlignment="Left" Height="37" Margin="30,268,0,0" VerticalAlignment="Top" Width="224"/>
+        <DataGrid Name="myDataGrid" HorizontalAlignment="Left" Height="239" Margin="30,24,0,0" VerticalAlignment="Top" Width="452">
 
+        <DataGrid.Columns>
+                <DataGridTextColumn Header="Imie" Width="225" Binding="{Binding Imie}"/>
+                <DataGridTextColumn Header="Punkty" Width="220" Binding="{Binding Punkty}"/>
+        </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>

@@ -18,34 +18,41 @@ namespace GraZadania
     /// <summary>
     /// Logika interakcji dla klasy DodajGracza.xaml
     /// </summary>
+
+
     public partial class DodajGracza : Page
     {
+
         public DodajGracza()
         {
             InitializeComponent();
         }
-        public struct sGracz
+        private List<Gracz> List;
+        public DodajGracza(List<Gracz> lista)
         {
-            public string Imie;
-            public int Punkty;
+            InitializeComponent();
+            List = lista;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.dodajGracza(imieBox.Text);
-            this.NavigationService.Navigate(new ZadajPytanie());
+  
+
+            this.zapiszGracza(imieBox.Text);
+            this.NavigationService.Navigate(new ZadajPytanie(List));
+           
 
         }
 
-        private void dodajGracza(string x)
+        private void zapiszGracza(string x)
         {
-            sGracz tmpGracz = new sGracz()
+            Gracz tmpGracz = new Gracz()
             {
                 Imie = x,
                 Punkty = 0
             };
 
-            GlobalVariables.ListaGraczy.Add(tmpGracz);
+            List.Add(tmpGracz);
 
         }
 
