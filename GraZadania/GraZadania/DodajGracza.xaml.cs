@@ -24,14 +24,11 @@ namespace GraZadania
         {
             InitializeComponent();
         }
-        struct Gracz
+        public struct sGracz
         {
             public string Imie;
             public int Punkty;
         }
-
-        
-        List<Gracz> ListaGraczy = new List<Gracz>(1);
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -42,13 +39,13 @@ namespace GraZadania
 
         private void dodajGracza(string x)
         {
-            Gracz tmpGracz = new Gracz()
+            sGracz tmpGracz = new sGracz()
             {
                 Imie = x,
                 Punkty = 0
             };
 
-            ListaGraczy.Add(tmpGracz);
+            GlobalVariables.ListaGraczy.Add(tmpGracz);
 
         }
 

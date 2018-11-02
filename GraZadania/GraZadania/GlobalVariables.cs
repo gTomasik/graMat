@@ -28,7 +28,7 @@ namespace GraZadania
         public struct Gracze
         {
             public string Imie;
-            public string Punkty;
+            public int Punkty;
         }
 
         List<Gracze> ListaGraczy = new List<Gracze>();
