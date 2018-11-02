@@ -1,0 +1,16 @@
+﻿<Page x:Class="GraZadania.DodajGracza"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GraZadania"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="525"
+      Title="DodajGracza">
+    <Grid>
+        <Label Content="Podaj Imię" HorizontalAlignment="Left" Height="42" Margin="225,47,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.577,0.784"/>
+        <TextBox Name="imieBox" HorizontalAlignment="Left" Height="32" Margin="162,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <Button Content="Zagraj" Click="Button_Click" HorizontalAlignment="Left" Height="30" Margin="205,151,0,0" VerticalAlignment="Top" Width="122"/>
+
+    </Grid>
+</Page>

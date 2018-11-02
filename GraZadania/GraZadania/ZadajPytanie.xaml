@@ -1,0 +1,19 @@
+﻿<Page x:Class="GraZadania.ZadajPytanie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GraZadania"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="525"
+      Title="ZadajPytanie">
+
+    <Grid>
+        <TextBox Name="dzialanieBox" HorizontalAlignment="Left" Height="42" Margin="159,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" />
+        <Label Content="Wynik:" HorizontalAlignment="Left" Height="42" Margin="108,106,0,0" VerticalAlignment="Top" Width="46"/>
+        <Button Content="Dalej" Click="Button_Click" HorizontalAlignment="Left" Height="39" Margin="187,157,0,0" VerticalAlignment="Top" Width="169"/>
+        <Button Name="button2" Content="Zaladuj Pytania" Click="Button_Click_1" HorizontalAlignment="Left" Height="37" Margin="19,217,0,0" VerticalAlignment="Top" Width="149"/>
+        <TextBlock Name="dzialanieBlock" HorizontalAlignment="Left" Height="40" Margin="176,51,0,0" TextWrapping="Wrap" Text="Dzialanie" VerticalAlignment="Top" Width="180"/>
+
+    </Grid>
+</Page>
