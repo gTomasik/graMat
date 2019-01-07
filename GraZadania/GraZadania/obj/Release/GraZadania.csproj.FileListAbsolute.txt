@@ -19,3 +19,7 @@ c:\users\ja\documents\visual studio 2017\Projects\GraZadania\GraZadania\obj\Rele
 c:\users\ja\documents\visual studio 2017\Projects\GraZadania\GraZadania\obj\Release\GraZadania.csproj.GenerateResource.Cache
 c:\users\ja\documents\visual studio 2017\Projects\GraZadania\GraZadania\obj\Release\GraZadania.exe
 c:\users\ja\documents\visual studio 2017\Projects\GraZadania\GraZadania\obj\Release\GraZadania.pdb
+C:\Users\Ja\Documents\Visual Studio 2017\Projects\GraZadania\GraZadania\obj\Release\WyswietlZle.g.cs
+C:\Users\Ja\Documents\Visual Studio 2017\Projects\GraZadania\GraZadania\obj\Release\WyswietlZle.baml
+C:\Users\Ja\Documents\Visual Studio 2017\Projects\GraZadania\GraZadania\obj\Release\GraZadania.csproj.CoreCompileInputs.cache
+C:\Users\Ja\Documents\Visual Studio 2017\Projects\GraZadania\GraZadania\obj\Release\GraZadania.csproj.CopyComplete

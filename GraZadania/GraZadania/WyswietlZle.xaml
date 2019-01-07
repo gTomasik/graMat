@@ -1,0 +1,17 @@
+﻿<Page x:Class="GraZadania.WyswietlZle"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GraZadania"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="525"
+      Title="WyswietlZle">
+
+    <Grid Margin="0,10,-0.2,0.4">
+        <Button Name="ZagrajPonownie" Click="Button_Click" Content="Zagraj Ponownie" HorizontalAlignment="Left" Height="37" Margin="261,268,0,0" VerticalAlignment="Top" Width="221"/>
+        <Button Name="Button1" Content="Wyświetl pytania" Click="Button_Click_1" HorizontalAlignment="Left" Height="37" Margin="30,268,0,0" VerticalAlignment="Top" Width="226"/>
+        <TextBlock Name="Txtblock" HorizontalAlignment="Left" Height="213" Margin="30,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="452"/>
+        <Label Content="Pytania na które udzielono błednej odpowiedzi" HorizontalAlignment="Left" Height="35" Margin="111,10,0,0" VerticalAlignment="Top" Width="300"/>
+    </Grid>
+</Page>

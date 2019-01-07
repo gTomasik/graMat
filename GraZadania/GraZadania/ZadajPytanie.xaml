@@ -14,6 +14,7 @@
         <Button Content="Dalej" Click="Button_Click" HorizontalAlignment="Left" Height="39" Margin="187,157,0,0" VerticalAlignment="Top" Width="169"/>
         <Button Name="button2" Content="Zaladuj Pytania" Click="Button_Click_1" HorizontalAlignment="Left" Height="37" Margin="19,217,0,0" VerticalAlignment="Top" Width="149"/>
         <TextBlock Name="dzialanieBlock" HorizontalAlignment="Left" Height="40" Margin="176,51,0,0" TextWrapping="Wrap" Text="Dzialanie" VerticalAlignment="Top" Width="180"/>
+        <TextBlock Name="datelbl"  HorizontalAlignment="Left" Height="53" Margin="361,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
 
     </Grid>
 </Page>

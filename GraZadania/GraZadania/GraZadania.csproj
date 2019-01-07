@@ -58,8 +58,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Gracz.cs" />
+    <Compile Include="Pytanie.cs" />
     <Compile Include="WyswietlRanking.xaml.cs">
       <DependentUpon>WyswietlRanking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WyswietlZle.xaml.cs">
+      <DependentUpon>WyswietlZle.xaml</DependentUpon>
     </Compile>
     <Compile Include="ZadajPytanie.xaml.cs">
       <DependentUpon>ZadajPytanie.xaml</DependentUpon>
@@ -84,6 +88,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="WyswietlRanking.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WyswietlZle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

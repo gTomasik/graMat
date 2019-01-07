@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+using System.Timers;
+
 
 namespace GraZadania
 {
@@ -49,7 +52,10 @@ namespace GraZadania
             Gracz tmpGracz = new Gracz()
             {
                 Imie = x,
-                Punkty = 0
+                Punkty = 0,
+                _t = new DispatcherTimer(),
+                _tstart = new DateTime(),
+                czasPrzejscia = ""
             };
 
             List.Add(tmpGracz);

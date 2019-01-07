@@ -9,14 +9,16 @@
       Title="WyswietlRanking">
 
     <Grid>
-        <Button Name="ZagrajPonownie" Click="Button_Click" Content="Zagraj Ponownie" HorizontalAlignment="Left" Height="37" Margin="259,268,0,0" VerticalAlignment="Top" Width="223"/>
-        <Button Content="Wyświetl Ranking" Click="Button_Click_1" HorizontalAlignment="Left" Height="37" Margin="30,268,0,0" VerticalAlignment="Top" Width="224"/>
-        <DataGrid Name="myDataGrid" HorizontalAlignment="Left" Height="239" Margin="30,24,0,0" VerticalAlignment="Top" Width="452">
+        <Button Name="ZagrajPonownie" Click="Button_Click" Content="Zagraj Ponownie" HorizontalAlignment="Left" Height="37" Margin="341,268,0,0" VerticalAlignment="Top" Width="141"/>
+        <Button Name="Button1" Content="Wyświetl Ranking" Click="Button_Click_1" HorizontalAlignment="Left" Height="37" Margin="30,268,0,0" VerticalAlignment="Top" Width="144"/>
+        <DataGrid Name="myDataGrid" HorizontalAlignment="Left" Height="239" Margin="30,24,0,0" VerticalAlignment="Top" Width="450">
 
-        <DataGrid.Columns>
-                <DataGridTextColumn Header="Imie" Width="225" Binding="{Binding Imie}"/>
-                <DataGridTextColumn Header="Punkty" Width="220" Binding="{Binding Punkty}"/>
-        </DataGrid.Columns>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Imie" Width="150" Binding="{Binding Imie}"/>
+                <DataGridTextColumn Header="Punkty" Width="150" Binding="{Binding Punkty}"/>
+                <DataGridTextColumn Header="Czas Przejścia" Width="150" Binding="{Binding czasPrzejscia}"/>
+            </DataGrid.Columns>
         </DataGrid>
+        <Button Content="Pokaż Błędne" HorizontalAlignment="Left" Margin="179,268,0,0" VerticalAlignment="Top" Width="157" Height="37" Click="Button_Click_2"/>
     </Grid>
 </Page>
